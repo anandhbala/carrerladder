@@ -7,11 +7,14 @@ phases:
       nodejs: 10
     commands:
       - echo Installing Mocha...
-      - npm install -g mocha
+      - npm install -g mocha      
+      - sudo yum install -y epel-release
+      - sudo yum –y install nginx
+      - sudo systemctl start nginx
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install       
+      - npm install
   build:
     commands:
       - npm run build
