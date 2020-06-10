@@ -9,7 +9,7 @@ phases:
       - echo Installing Mocha...
       - npm install -g mocha      
       - yum install -y epel-release
-      - yum –y install nginx
+      - yum install nginx
       - systemctl start nginx
   pre_build:
     commands:
