@@ -8,9 +8,6 @@ phases:
     commands:
       - echo Installing Mocha...
       - npm install -g mocha      
-      - yum install -y epel-release
-      - yum install nginx
-      - systemctl start nginx
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
