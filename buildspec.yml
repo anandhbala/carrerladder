@@ -21,8 +21,10 @@ artifacts:
   files:
     # - src/index.js
     # - src/App.js
-    - src/index.js
-    - src/appspec.yaml
-    - package.json
-    - node_modules/**/*
+   # - src/index.js
+   # - src/appspec.yaml
+    # - package.json
+    # - node_modules/**/*
+     - '**/*'
+  base-directory: 'careerladder'
 
