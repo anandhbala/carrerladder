@@ -21,7 +21,8 @@ artifacts:
   files:
     # - src/index.js
     # - src/App.js
-    - src/*
+    - src/index.js
+    - src/appspec.yaml
     - package.json
     - node_modules/**/*
 
