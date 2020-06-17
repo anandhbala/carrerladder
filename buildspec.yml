@@ -27,4 +27,5 @@ artifacts:
     # - node_modules/**/*
      - '**/*'
      - appspec.yml
+     - base-directory:build
 
