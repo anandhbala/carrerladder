@@ -19,8 +19,11 @@ phases:
   # Include only the files required for your application to run.
 artifacts:
   files:
-    - src/index.js
-    - src/App.js
+    # - src/index.js
+    # - src/App.js
+    - src 
+    - appspec.yml
+    - buildpsec.yml
     - package.json
     - node_modules/**/*
 
