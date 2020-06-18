@@ -5,7 +5,7 @@ files:
     destination: /home/ec2-user/cladder/
 hooks:
   BeforeInstall:
-    - location: /startscript.sh
+    - location: ./startscript.sh
   AfterInstall:
     - location: Scripts/RunResourceTests.sh
       timeout: 180
