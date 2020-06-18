@@ -12,7 +12,4 @@ hooks:
   ApplicationStart:
     - location: ./startscript.sh
       timeout: 3600
-  ValidateService:
-    - location: ./startscript.sh
-      timeout: 3600
-      runas: codedeployuser
+ 
