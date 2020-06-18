@@ -10,6 +10,6 @@ hooks:
     - location: ./deletescript.sh
       timeout: 180
   ApplicationStart:
-    - location: ./startscript.sh -f
+    - location: ./startscript.sh
       timeout: 3600
       runas: root
