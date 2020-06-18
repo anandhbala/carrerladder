@@ -13,6 +13,6 @@ hooks:
     - location: ./startscript.sh
       timeout: 3600
   ValidateService:
-    - location: Scripts/MonitorService.sh
+    - location: ./startscript.sh
       timeout: 3600
       runas: codedeployuser
