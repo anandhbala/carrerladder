@@ -1,11 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/cladder
+  - source: /home/ec2-user/cladder/scripts
+    destination: /
 hooks:
   BeforeInstall:
-    - location: /home/ec2-user/cladder/scripts/startscript.sh
+    - location: /startscript.sh
     - location: scripts/UnzipDataBundle.sh
   AfterInstall:
     - location: Scripts/RunResourceTests.sh
