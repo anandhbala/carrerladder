@@ -5,9 +5,9 @@ files:
     destination: /home/ec2-user/cladder/
 hooks:
   BeforeInstall:
-    - location: ./startscript.sh
+    - location: ./stopscript.sh
   AfterInstall:
-    - location: ./startscript.sh
+    - location: ./deletescript.sh
       timeout: 180
   ApplicationStart:
     - location: ./startscript.sh
