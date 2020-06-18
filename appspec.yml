@@ -7,10 +7,10 @@ hooks:
   BeforeInstall:
     - location: ./startscript.sh
   AfterInstall:
-    - location: Scripts/RunResourceTests.sh
+    - location: ./startscript.sh
       timeout: 180
   ApplicationStart:
-    - location: Scripts/RunFunctionalTests.sh
+    - location: ./startscript.sh
       timeout: 3600
   ValidateService:
     - location: Scripts/MonitorService.sh
