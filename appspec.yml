@@ -6,7 +6,6 @@ files:
 hooks:
   BeforeInstall:
     - location: /startscript.sh
-    - location: scripts/UnzipDataBundle.sh
   AfterInstall:
     - location: Scripts/RunResourceTests.sh
       timeout: 180
