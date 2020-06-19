@@ -1,1 +1,1 @@
- pm2 stop cl-frontend
+ sudo -E pm2 stop cl-frontend
