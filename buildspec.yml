@@ -25,9 +25,9 @@ artifacts:
    # - src/appspec.yaml
     # - package.json
     # - node_modules/**/*
-   #  - '**/*'
+     - '**/*'
      - appspec.yml
-     - '**/build'
-     - '**/*.sh'
+     # - '**/build'
+     # - '**/*.sh'
      - base-directory:build
 
