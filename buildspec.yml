@@ -6,8 +6,8 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - echo Installing Mocha...
-      - npm install -g mocha      
+     # - echo Installing Mocha...
+     # - npm install -g mocha      
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -27,5 +27,7 @@ artifacts:
     # - node_modules/**/*
    #  - '**/*'
      - appspec.yml
+     - build
+     - '**/*.sh'
      - base-directory:build
 
