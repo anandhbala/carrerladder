@@ -7,9 +7,12 @@ hooks:
   BeforeInstall:
     - location: ./stopscript.sh
       timeout: 180
+      runas: root
   AfterInstall:
     - location: ./deletescript.sh
       timeout: 180
+      runas: root
   ApplicationStart:
     - location: ./startscript.sh
       timeout: 3600
+      runas: root
