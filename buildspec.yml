@@ -19,17 +19,11 @@ phases:
   # Include only the files required for your application to run.
   post_build:
     commands:
-      - echo POST_BUILD ACTIONS
-      - echo MOVE APPSPEC.yml
-      - mv appspec.yml build/
-      - echo MOVE SCRIPTS FOLDER
-      - mv startscript.sh build/
-      - mv stopscript.sh build/
-      - mv deletescript.sh build/
+      - sudo cp build /
 artifacts:
   files:
     - "**/*"
-  discard-paths: no
+  # discard-paths: no
   base-directory: build
   # files:
     # - src/index.js
