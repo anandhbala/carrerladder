@@ -1,18 +1,18 @@
 version: 0.0
 os: linux
 files:
-  - source: /appspec.yml
-    destination: /home/ec2-user/cladder/
+  # - source: /appspec.yml
+  #  destination: /home/ec2-user/cladder/
 hooks:
   BeforeInstall:
-    - location: ./stopscript.sh
+    - location: stopscript.sh
       timeout: 180
       runas: root
   AfterInstall:
-    - location: ./deletescript.sh
+    - location: deletescript.sh
       timeout: 180
       runas: root
   ApplicationStart:
-    - location: ./startscript.sh
+    - location: startscript.sh
       timeout: 3600
       runas: root
