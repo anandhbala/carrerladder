@@ -1,5 +1,6 @@
  
  #!/bin/bash
+  echo "Script executed from: ${PWD}"
 sudo pm2 describe cl-frontend > /dev/null
 RUNNING=$?
 
