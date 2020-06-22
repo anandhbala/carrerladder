@@ -23,11 +23,11 @@ phases:
       - echo MOVE APPSPEC.yml
       - mv appspec.yml build/
       - echo MOVE SCRIPTS FOLDER
-      - mv startscript.sh build
-      - mv stopscript.sh build
-      - mv deletescript.sh build
+      - mv startscript.sh build/
+      - mv stopscript.sh build/
+      - mv deletescript.sh build/
 artifacts:
-  files:
+  # files:
     # - src/index.js
     # - src/App.js
    # - src/index.js
