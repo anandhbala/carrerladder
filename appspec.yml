@@ -1,15 +1,17 @@
 version: 0.0
 os: linux
 files:
-  - source: /appspec.yml
-    destination: /home/ec2-user/cladder/
+  - source: /
+    destination: /home/ec2-user/Ca-Lad/
+permissions:
+- object: /
+   pattern: "**"
+   owner: ec2-user
+   group: ec2-user
 hooks:
-  BeforeInstall:
-    - location: ./stopscript.sh
-      timeout: 180
-  AfterInstall:
-    - location: ./deletescript.sh
-      timeout: 180
-  ApplicationStart:
-    - location: ./startscript.sh
-      timeout: 3600
+ApplicationStop:
+- location: bin/app-stop
+  timeout: 10
+  runas: ec2-user
+   
+  
