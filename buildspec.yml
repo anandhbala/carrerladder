@@ -17,6 +17,15 @@ phases:
       - npm run build
       # - npm start     
   # Include only the files required for your application to run.
+  post_build:
+    commands:
+      - echo POST_BUILD ACTIONS
+      - echo MOVE APPSPEC.yml
+      - mv appspec.yml build/
+      - echo MOVE SCRIPTS FOLDER
+      - mv startscript.sh build
+      - mv stopscript.sh build
+      - mv deletescript.sh build
 artifacts:
   files:
     # - src/index.js
@@ -25,9 +34,14 @@ artifacts:
    # - src/appspec.yaml
     # - package.json
     # - node_modules/**/*
-     - '**/*'
-     - appspec.yml
+     # - '**/*'
+     # - appspec.yml
      # - '**/build'
      # - '**/*.sh'
-     - base-directory:build
+    # - base-directory:build
+    files:
+    - "**/*"
+      discard-paths: no
+      base-directory: build
+    
 
