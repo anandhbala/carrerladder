@@ -27,6 +27,10 @@ phases:
       - mv stopscript.sh build/
       - mv deletescript.sh build/
 artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: build
   # files:
     # - src/index.js
     # - src/App.js
@@ -39,9 +43,6 @@ artifacts:
      # - '**/build'
      # - '**/*.sh'
     # - base-directory:build
-    files:
-    - "**/*"
-      discard-paths: no
-      base-directory: build
+    
     
 
