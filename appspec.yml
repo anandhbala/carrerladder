@@ -17,6 +17,6 @@ hooks:
       timeout: 180
       runas: root
   ApplicationStart:
-    - location: startscript.sh
+    - location: /home/ec2-user/cladder/startscript.sh
       timeout: 3600
       runas: root
