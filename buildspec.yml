@@ -23,6 +23,7 @@ phases:
        - echo Script executed from `pwd`        
 artifacts:
   files:
+    - appspec.yml
     - "**/*"
   # discard-paths: no
   base-directory: build
