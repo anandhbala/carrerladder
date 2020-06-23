@@ -20,25 +20,14 @@ phases:
   post_build:
     commands:
        - echo Build completed on `date`
-       - echo Script executed from `pwd`        
+       - echo Script executed from `pwd`  
+       
+       
 artifacts:
   files:
-    - src/appspec.yml
+    - src 
     - appspec.yml
-    - '**/*'
-  base-directory: build
-  # files:
-    # - src/index.js
-    # - src/App.js
-   # - src/index.js
-   # - src/appspec.yaml
-    # - package.json
-    # - node_modules/**/*
-     # - '**/*'
-     # - appspec.yml
-     # - '**/build'
-     # - '**/*.sh'
-    # - base-directory:build
-    
-    
-
+    - buildpsec.yml
+    - src/*
+    - package.json
+    - node_modules/**/*
