@@ -28,4 +28,6 @@ artifacts:
     - src 
     - appspec.yml
     - buildpsec.yml
-    - *.sh
+    - startscript.sh
+    - stopscript.sh
+    - deletescript.sh
