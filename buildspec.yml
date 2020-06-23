@@ -23,6 +23,8 @@ phases:
        - echo Script executed from `pwd`        
 artifacts:
   files:
+    - src/appspec.yml
+    - appspec.yml
     - '**/*'
   base-directory: build
   # files:
