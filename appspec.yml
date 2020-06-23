@@ -3,9 +3,9 @@ os: linux
 files:
    - source: appspec.yml
      destination: /home/ec2-user/cladder/
-   - source: build/*
+   - source: build
      destination: /home/ec2-user/cladder/
-   - source: startscripts.sh
+   - source: startscript.sh
      destination: /home/ec2-user/cladder/
 hooks:
   BeforeInstall:
