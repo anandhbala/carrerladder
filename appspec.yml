@@ -4,7 +4,7 @@ files:
    - source: appspec.yml
      destination: /home/ec2-user/cladder/
    - source: build
-     destination: /home/ec2-user/cladder/
+     destination: /home/ec2-user/cladder/build/
    - source: startscript.sh
      destination: /home/ec2-user/cladder/
 hooks:
@@ -17,6 +17,6 @@ hooks:
       timeout: 180
       runas: root
   ApplicationStart:
-    - location: /home/ec2-user/cladder/startscript.sh
+    - location: startscript.sh
       timeout: 3600
       runas: root
