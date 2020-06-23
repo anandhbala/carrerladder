@@ -19,7 +19,8 @@ phases:
   # Include only the files required for your application to run.
   post_build:
     commands:
-      - cp -r *.*  /home/ec2-user/test
+       - echo Build completed on `date`
+       - echo Script executed from `pwd`        
 artifacts:
   files:
     - "**/*"
