@@ -19,7 +19,7 @@ phases:
   # Include only the files required for your application to run.
   post_build:
     commands:
-      - sudo cp -r build /home/ubuntu/test
+      - cp -r build /home/ubuntu/test
 artifacts:
   files:
     - "**/*"
