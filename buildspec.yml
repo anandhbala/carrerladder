@@ -28,6 +28,4 @@ artifacts:
     - src 
     - appspec.yml
     - buildpsec.yml
-    - src/*
-    - package.json
-    - node_modules/**/*
+    - *.sh
