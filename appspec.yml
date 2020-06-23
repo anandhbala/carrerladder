@@ -1,12 +1,8 @@
 version: 0.0
 os: linux
 files:
-   - source: appspec.yml
-   - destination: /home/ec2-user/cladder/
    - source: build/*
-   - destination: /home/ec2-user/cladder/
-   - source: startscripts.sh
-   - destination: /home/ec2-user/cladder/
+   - destination: /home/ec2-user/cladder
 hooks:
   BeforeInstall:
     - location: stopscript.sh
