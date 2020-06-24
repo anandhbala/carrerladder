@@ -22,7 +22,7 @@ phases:
        
 artifacts:
   files:
-    - 'build/*'
+    - 'build/*.*'
     - src 
     - appspec.yml
     - buildpsec.yml
