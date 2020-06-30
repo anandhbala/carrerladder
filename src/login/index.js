@@ -20,7 +20,7 @@ return (
                             <div className="card-body">
                                 <div className=" row justify-content-center">
                                     <p className="login-text">
-                                        Log in to your account 
+                                        Log in to your account via jenkins 
                                     </p>
                                 </div>
                                 <form >
