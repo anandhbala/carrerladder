@@ -6,6 +6,7 @@ files:
    - source: build
      destination: /home/ec2-user/cladder/build/
    #- source: startscript.sh
+   #
    #  destination: /home/ec2-user/cladder/
 hooks:
   BeforeInstall:
