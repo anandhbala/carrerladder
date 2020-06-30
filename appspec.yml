@@ -1,12 +1,11 @@
 version: 0.0
 os: linux
 files:
-   - source: appspec.yml
-     destination: /home/ec2-user/cladder/
+   # - source: appspec.yml
+   #  destination: /home/ec2-user/cladder/
    - source: build
      destination: /home/ec2-user/cladder/build/
    #- source: startscript.sh
-   #
    #  destination: /home/ec2-user/cladder/
 hooks:
   BeforeInstall:
